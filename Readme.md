@@ -31,6 +31,6 @@ $ cd calculoFrete_Node
 
 ![public\img\exemplo3.png](./public/img/exemplo3.png)
 
-# Documentação está na rota localhost:3559/api-docs
+* Documentação está na rota localhost:3559/api-docs
 
-# Servidor rodando na porta 3559
+* Servidor rodando na porta 3559
