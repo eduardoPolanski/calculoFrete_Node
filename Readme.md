@@ -21,7 +21,7 @@ $ cd calculoFrete_Node
 * Para consultar o valor e prazo de entrega usar a rota localhost:3559/consultafrete
 * Em formato JSON informar cep e peso do produto como na imagem abaixo
 
-![public\img\exemplo.png](./public/img/exemplo1.png)
+![public\img\exemplo.png](./public/img/exemplo.png)
 
 * Se Cep estiver dentro das faixas de entrega o retorno sera o valor do frete e o prazo de entrega
 
