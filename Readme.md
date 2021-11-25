@@ -11,7 +11,7 @@ $ git clone https://github.com/eduardoPolanski/calculoFrete_Node.git
 
 $ cd calculoFrete_Node
 
-#Instalando Dependências
+# Instalando Dependências
 
 	$ npm install
 	$ npm run dev 
