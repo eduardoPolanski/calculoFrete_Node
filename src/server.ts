@@ -4,10 +4,8 @@ import swaggerFile from "./swagger.json"
 import "express-async-errors"
 import { rota } from './router';
 import { AppErrors } from './errors/AppError'
-import cors from "cors"
 
 const app = express()
-app.use(cors())
 
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile))
