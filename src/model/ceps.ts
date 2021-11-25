@@ -1,0 +1,77 @@
+export interface Cep {
+    cepInicial:number,
+	cepFinal:number,
+	prazo:number,
+	preco:number,
+	gris:number,
+	advalorem:number
+}
+
+export const data: Cep[] = [
+	{
+		cepInicial:86000000,
+		cepFinal:86099969,
+		prazo:5,
+		preco:14.27,
+		gris:0.55,
+		advalorem:0.73
+	},
+	{
+		cepInicial:86180000,
+		cepFinal:86195969,
+		prazo:5,
+		preco:16.48,
+		gris:0.65,
+		advalorem:0.75
+	},
+	{
+		cepInicial:86800000,
+		cepFinal:86815969,
+		prazo:5,
+		preco:17.85,
+		gris:0.55,
+		advalorem:0.69
+	},
+	{
+		cepInicial:86600000,
+		cepFinal:86605969,
+		prazo:6,
+		preco:19.44,
+		gris:0.55,
+		advalorem:0.75
+	},
+	{
+		cepInicial:86700000,
+		cepFinal:86719969,
+		prazo:6,
+		preco:23.37,
+		gris:0.85,
+		advalorem:0.72
+	},
+	{
+		cepInicial:86200000,
+		cepFinal:86200969,
+		prazo:5,
+		preco:25.11,
+		gris:0.55,
+		advalorem:0.75
+	},
+	{
+		cepInicial:86300000,
+		cepFinal:86300969,
+		prazo:5,
+		preco:28.19,
+		gris:0.55,
+		advalorem:0.7
+	},
+	{
+		cepInicial:86130000,
+		cepFinal:86139969,
+		prazo:5,
+		preco:30.58,
+		gris:0.49,
+		advalorem:0.75
+	}
+];
+
+

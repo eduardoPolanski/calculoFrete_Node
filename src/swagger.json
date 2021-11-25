@@ -1,0 +1,70 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "ConsultaFrete Documention",
+        "version": "1.0.0",
+        "contact": {
+            "email": "eduardo_polanski@hotmail.com"
+        }
+    },
+    "paths": {
+        "/consultafrete": {
+            "get":{
+                "tags": ["Consulta Frete"],
+                "summary":"Consulta frete",
+                "description":"Consulta valor do frete e prazo para entrega",
+                "parameters": [
+                    {
+                        "name": "cep",
+                        "in": "body",
+                        "description": "Informar o CEP",
+                        "required": true,
+                        "example":{
+                            "cep":86000000
+                        }
+                    },
+                    {
+                        "name": "peso",
+                        "in": "body",
+                        "description": "Informar o peso",
+                        "required": true,
+                        "example":{
+                            "peso":200
+                        }
+                    }
+                ],
+                "responses": {
+                    "404":{
+                        "description":"Não atendemos o CEP: "
+                    },
+                    "200": {
+                        "description":"Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/Cep"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Cep" : {
+                "type": "object",
+                "properties": {
+                    "prazoEntrega": {
+                        "type": "number"
+                    },
+                    "peso": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}
